@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;1,100;1,200;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;1,100;1,200;1,400;1,600;1,700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.bg-tran{
+.bg-tran {
   background-color: #999999;
 }
 .banner {
@@ -41,54 +41,55 @@
   color: #fff;
   font-size: 18px;
 }
-.banner header{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 100px;
-    z-index: 1000;
+.banner header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px;
+  z-index: 1000;
 }
-.banner header .logo{
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.banner header .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.about{
+.about {
   position: relative;
   width: 100%;
   display: flex;
+  height: 100vh;
 }
-.about .contentBx{
-  padding: 100px;
+.about .contentBx {
+  padding: 50px;
   background: #162c3b;
   width: 50%;
 }
-.heading{
+.heading {
   font-size: 30px;
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-.text{
+.text {
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 300;
   color: #fff;
 }
-.services{
+.services {
   width: 100%;
   background: #efefef;
   padding: 100px;
 }
-.services > h2{
+.services > h2 {
   text-align: center;
   margin-top: -50px;
   font-size: 30px;
@@ -96,12 +97,12 @@
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-.all{
+.all {
   display: flex;
   align-items: stretch;
   justify-content: space-around;
 }
-.box{
+.box {
   width: 300px;
   background-color: white;
   display: flex;
@@ -111,53 +112,105 @@
   padding: 20px 12px;
   margin-bottom: 20px;
   box-shadow: 3px 4px 7px 3px #ccc;
-  transition: .5s ease-in;
+  transition: 0.5s ease-in;
 }
-.box:hover{
+.box:hover {
   background: #efefef;
   box-shadow: 1px 1px 3px 1px #ccc;
 }
-.box > img{
+.box > img {
   width: 50px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
-.box > h4{
+.box > h4 {
   text-align: center;
   margin: 10px;
   font-size: 20px;
   font-weight: 450;
   text-transform: uppercase;
 }
-.box > p{
+.box > p {
   text-align: center;
 }
-@media screen and (max-width: 580px){
-  .services{
-    padding: 40px
+.imgBx {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 150px; */
+}
+.imgBx > img {
+  width: 250px;
+  object-fit: contain;
+}
+
+.contactus {
+  width: 100%;
+  height: 100vh;
+  margin-top: 10px;
+  padding: 100px;
+  background: #efefef;
+}
+
+.half {
+  width: 50%;
+}
+label {
+  margin-bottom: -5px;
+}
+.multiline {
+  width: 100%;
+  padding: 5px 8px;
+  margin-bottom: 12px;
+}
+.half > form > input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+}
+.multiline {
+  height: 140px;
+}
+
+@media screen and (max-width: 580px) {
+  .services {
+    padding: 40px;
   }
 }
-@media screen and (max-width: 480px){
-  .all{
+@media screen and (max-width: 480px) {
+  .all {
     flex-direction: column;
     align-items: center;
   }
-  .services{
-    padding: 20px
+  .services {
+    padding: 20px;
   }
-  .services > h2{
+  .services > h2 {
     font-size: 20px;
     margin-top: 0;
   }
-  .box{
+  .box {
     min-height: 300px;
     height: 200px;
   }
-  .about{
+  .about {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .about .contentBx{width: 100%; padding: 20px;}
+  .about {
+    height: 100%;
+  }
+  .about .contentBx {
+    width: 100%;
+    padding: 20px;
+  }
+  .about .imgBx {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
   .banner .content h2 {
     font-size: 35px;
   }
@@ -165,11 +218,19 @@
     font-size: 17px;
     padding: 10px;
   }
-  .heading{
+  .heading {
     font-size: 20px;
     color: #fff;
     font-weight: 450;
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
     margin-bottom: 10px;
+  }
+  .contactus{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .half{
+    width: 100%
   }
 }
